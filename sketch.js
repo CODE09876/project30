@@ -140,7 +140,7 @@ function draw() {
 
 function keyPressed(){
   if (keyCode === 32){
-    Matter.Body.setPosition(player.body,{x:150, y:200});
+    
     sling.attach(player.body);
   }
 }

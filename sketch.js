@@ -147,8 +147,6 @@ function mouseDragged(){
 function mouseReleased(){
   sling.fly();
 }
-
-
 function keyPressed(){
     if(keyCode === 32){
         slingshot.attach(polygon.body);

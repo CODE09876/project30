@@ -138,13 +138,6 @@ function draw() {
   sling.display();
 }
 
-function keyPressed(){
-  if (keyCode === 32){
-    
-    sling.attach(player.body);
-    value = 255;
-  }
-}
 
 function mouseDragged(){
   Matter.Body.setPosition(this.ball, {x: mouseX , y: mouseY});
@@ -155,3 +148,9 @@ function mouseReleased(){
   sling.fly();
 }
 
+}
+function keyPressed(){
+    if(keyCode === 32){
+        slingshot.attach(polygon.body);
+    }
+}
